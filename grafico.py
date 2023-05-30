@@ -7,7 +7,7 @@ dados = pd.read_csv('grafico.csv')
 st.dataframe(dados)
 
 chart_data = pd.DataFrame(
-    np.random.randn(20, 3),
-    columns=['a', 'b', 'c'])
+    np.random.randn(10, 5),
+    columns=['pessoa', 'salario'])
 
 st.line_chart(chart_data)
