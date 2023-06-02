@@ -11,4 +11,4 @@ chart_data = dados[['Link', 'Likes']].sort_values(by='Likes', ascending=False).h
 st.bar_chart(chart_data.set_index('Link'))
 
 st.title('Tenha acesso às publicações')
-st.write(dados['Likes']).sort_values(by='Likes', ascending=False).head(10)
+st.write(dados['Link']).sort_values(by='Likes', ascending=False).head(10)
