@@ -1,17 +1,22 @@
+import streamlit as st
 import pandas as pd
-import streamlit as st 
-import matplotlib.pyplot as plt
-
-st.title('Gráfico de Salários')
+import numpy as np
 
 dados = pd.read_csv('grafico.csv')
+st.dataframe(dados)
 
-df = pd.DataFrame(dados)
+st.title('Empresa Cariocas')
 
-fig, ax = plt.subplots()
-ax.barh(df['pessoa'], df['salario'], color='g')
-ax.set_xlabel('salario')
-ax.set_ylabel('pessoa')
-ax.set_title('Empresa Farm')
+st.write("Tabela")
 
-st.pyplot(fig)
+dataframe = pd.DataFrame(dados)
+
+dataframe.style.highlight_max(axis=0)
+
+st.write(dataframe)
+
+chart_data = pd.DataFrame(
+     np.random.randn(20, 3),
+     columns=['pessoa','salario'])
+
+st.bar_chart(chart_data)
