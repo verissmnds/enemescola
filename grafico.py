@@ -7,10 +7,5 @@ st.title('Empresa Cariocas')
 
 dataframe = pd.DataFrame(dados)
 
-dataframe.style.highlight_max(axis=0)
-
-st.write(dataframe)
-
-chart_data = dataframe[['pessoa', 'salario']]
-
+chart_data = dados[['pessoa', 'salario']]
 st.bar_chart(chart_data.set_index('pessoa'))
