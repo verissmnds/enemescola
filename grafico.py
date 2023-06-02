@@ -7,9 +7,6 @@ dados = pd.read_csv('grafico.csv')
 
 df = pd.DataFrame(dados)
   
-X = list(df.iloc[:, pessoa])
-Y = list(df.iloc[:, salario])
-  
 plt.bar(X, Y, color='g')
 plt.title("Empresa Farm")
 plt.xlabel("pessoa")
