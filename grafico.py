@@ -2,6 +2,8 @@ import pandas as pd
 import streamlit as st 
 import matplotlib.pyplot as plt
 
+pip install matplotlib==3.4.3
+
 st.title('Gráfico de Salários')
 
 dados = pd.read_csv('grafico.csv')
