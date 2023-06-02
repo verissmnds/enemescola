@@ -10,4 +10,4 @@ st.bar_chart(chart_data.set_index('Link'))
 
 st.title('Se quiser, acesse as publicações e confira!')
 for link in chart_data['Link']:
-    st.markdown(f'- [{link}]({link})')
+    st.markdown(f'- [{link}]({link})', '-[{'Likes'}])')
