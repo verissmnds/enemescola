@@ -3,7 +3,7 @@ import streamlit as st
 import numpy as np
 st.title('Gráfico de Salários')
 
-dados = pd.read_csv('salario.csv')
+dados = pd.read_csv('grafico.csv')
 
 dados.style.highlight_max(axis=0)
 
