@@ -9,4 +9,4 @@ dados.style.highlight_max(axis=0)
 
 st.write(dados['salario','pessoa'])
 
-st.bar_chart(dados)
+st.bar_chart(dados['salario','pessoa'])
