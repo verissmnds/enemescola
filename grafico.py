@@ -7,6 +7,6 @@ dados = pd.read_csv('grafico.csv')
 
 dados.style.highlight_max(axis=0)
 
-st.write(dados['salario','pessoa'])
+st.write(dados)
 
-st.bar_chart(dados['salario','pessoa'])
+st.bar_chart(dados)
