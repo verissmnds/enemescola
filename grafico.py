@@ -5,8 +5,12 @@ st.title('Gráfico de Salários')
 
 dados = pd.read_csv('grafico.csv')
 
-dados.style.highlight_max(axis=0)
-
-st.write(dados)
-
-st.bar_chart(dados[['salario', 'pessoa']])
+df = pd.DataFrame(dados)
+  
+X = list(df.iloc[:, pessoa])
+Y = list(df.iloc[:, salario])
+  
+plt.bar(X, Y, color='g')
+plt.title("Empresa Farm")
+plt.xlabel("pessoa")
+plt.ylabel("salario")
