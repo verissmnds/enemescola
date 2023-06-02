@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 
-dados = pd.read_csv('grafico.csv')
+dados = pd.read_csv('Joao.csv.csv')
 
-st.title('Empresa Cariocas')
+st.title('Publicações mais curtidas')
 st.write(dados)
 
-chart_data = dados[['pessoa', 'salario']]
-st.bar_chart(chart_data.set_index('pessoa'))
+chart_data = dados[['Link', 'Likes']]
+st.bar_chart(chart_data.set_index('Link'))
